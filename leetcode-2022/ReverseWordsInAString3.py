@@ -39,11 +39,19 @@ def reverseWordsShorter(s):
         ans += w + ' '
     return ans[:-1]
 
+def reverseWordsAlternate(s):
+    l = s.split(' ')
+    out = []
+    for i in l:
+        out.append(i[::-1])
+    return ' '.join(out)
+
 if __name__ == '__main__':
     s = "Let's take LeetCode contest"
     print(reverseWords(s))
     print(reverseWordsShorter(s))
+    print(reverseWordsAlternate(s))
     s = 'God Ding'
     print(reverseWords(s))
     print(reverseWordsShorter(s))
-    
+    print(reverseWordsAlternate(s))
