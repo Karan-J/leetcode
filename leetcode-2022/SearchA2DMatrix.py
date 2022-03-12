@@ -25,6 +25,9 @@ All the integers in each column are sorted in ascending order.
 
 '''
 
+from turtle import width
+
+
 def searchMatrixSimple(matrix,target):
     for row in matrix:
         if target in row:
@@ -101,10 +104,34 @@ def searchMatrixDC(matrix,target):
 
     return False
 
+def searchMatrixSSR(matrix,target):
+    if not matrix:
+        return False
+    
+    if len(matrix) == 0 or len(matrix[0]) == 0:
+        return False
+
+    height = len(matrix)
+    width = len(matrix[0])
+
+    row = height - 1
+    col = 0
+
+    while col < width and row >= 0:
+        if target < matrix[row][col]:
+            row -= 1
+        elif target > matrix[row][col]:
+            col += 1
+        else:
+            return True
+
+    return False
+
+
 if __name__ == '__main__':
     matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]]
     target = 5
-    print(searchMatrix(matrix,target),searchMatrixSimple(matrix,target),searchMatrixDC(matrix,target))
+    print(searchMatrix(matrix,target),searchMatrixSimple(matrix,target),searchMatrixDC(matrix,target),searchMatrixSSR(matrix,target))
     matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]]
     target = 20
-    print(searchMatrix(matrix,target),searchMatrixSimple(matrix,target),searchMatrixDC(matrix,target))
+    print(searchMatrix(matrix,target),searchMatrixSimple(matrix,target),searchMatrixDC(matrix,target),searchMatrixSSR(matrix,target))
