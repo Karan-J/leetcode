@@ -78,5 +78,6 @@ if __name__ == '__main__':
     target = "a"
     print(myNextGreatestLetter(letters,target='a'),linNextGreatestLetter(letters,'a'),binNextGreatestLetter(letters,'a'))
     print(myNextGreatestLetter(letters,'c'),linNextGreatestLetter(letters,'c'),binNextGreatestLetter(letters,'c'))
+    target = 'f'
     print(myNextGreatestLetter(letters,'f'),linNextGreatestLetter(letters,'f'),binNextGreatestLetter(letters,'f'))
     print(myNextGreatestLetter(letters,'j'),linNextGreatestLetter(letters,'j'),binNextGreatestLetter(letters,'j'))
