@@ -74,3 +74,6 @@ if __name__ == '__main__':
     text1 = "abc"
     text2 = "def"
     print(longestCommonSubsequence(text1,text2), lcs(text1,text2))
+    text1 = "acgtagca"
+    text2 = "cgthccgta"
+    print(longestCommonSubsequence(text1,text2), lcs(text1,text2))
