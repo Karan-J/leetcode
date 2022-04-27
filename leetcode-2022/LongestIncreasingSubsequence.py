@@ -58,3 +58,5 @@ if __name__ == '__main__':
     print(lis(nums), lengthOfLIS(nums))
     nums = [7,7,7,7,7,7,7]
     print(lis(nums), lengthOfLIS(nums))
+    nums = [2,4,5,7,2,9,6,5,10,43,21,36,78]
+    print(lis(nums), lengthOfLIS(nums))
