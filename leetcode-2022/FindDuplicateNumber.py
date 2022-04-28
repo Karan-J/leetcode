@@ -59,3 +59,5 @@ if __name__ == '__main__':
     print(findDuplicate1(nums),findDuplicate2(nums),findDuplicate3(nums))
     nums = [3,1,3,4,2]
     print(findDuplicate1(nums),findDuplicate2(nums),findDuplicate3(nums))
+    nums = [2,4,6,7,8,9,4]
+    print(findDuplicate1(nums),findDuplicate2(nums),findDuplicate3(nums))
