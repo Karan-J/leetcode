@@ -69,7 +69,7 @@ def removeElement2(nums,val):
             nums[start], nums[end] = nums[end], nums[start]
             end -= 1
         start += 1
-    return nums, start
+    return nums, start  # checked doesn't work all the time
 
 def removeElement3(nums, val):
     l = len(nums)
