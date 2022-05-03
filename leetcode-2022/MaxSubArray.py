@@ -71,3 +71,5 @@ if __name__ == "__main__":
     print(maxSubArray(nums),maxSubArrayDc(nums))
     nums = [i for i in range(-10,1)]
     print(maxSubArray(nums),maxSubArrayDc(nums))
+    nums = [2,3,3,4]
+    print(maxSubArray(nums),maxSubArrayDc(nums))
