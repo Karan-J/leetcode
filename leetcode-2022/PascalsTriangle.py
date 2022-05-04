@@ -64,3 +64,4 @@ if __name__ == '__main__':
     print(generatePascalSimple(5))
     print(generatePascalsTriangle(numRows=7))
     print(myGeneratePascalsTriangle(numRows=7))
+    print(myGeneratePascalsTriangle(numRows=4))
