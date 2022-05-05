@@ -58,3 +58,5 @@ if __name__ == '__main__':
     print(mergeSort(nums))
     nums = [5,1,1,2,0,0]
     print(mergeSort(nums))
+    nums = [2,4,67,8,3,12,8,7,3,6]
+    print(mergeSort(nums))
