@@ -39,3 +39,6 @@ if __name__ == '__main__':
     a = '1010'
     b = '1011'
     print(addBinary(a,b))
+    a = '10010'
+    b = '1011'
+    print(addBinary(a,b))
