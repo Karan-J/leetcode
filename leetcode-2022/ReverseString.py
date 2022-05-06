@@ -54,3 +54,4 @@ if __name__ == '__main__':
     print(reverseString(list('Leetcode')))
     print(reverseStringRecursive(list('String')))
     print(reverseStringRecursive(list('Leetcode')))
+    print(reverseString(list('Hello')))
